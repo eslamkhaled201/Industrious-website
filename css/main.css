@@ -85,7 +85,7 @@ main{
 /*  section about us   */
 .section__about-us{
     width: 100%;
-    background-image:  url('../../images/cta01.jpg');
+    background-image:  url('../images/cta01.jpg');
      background-attachment: fixed;
     background-position: center;
     background-size: cover;
