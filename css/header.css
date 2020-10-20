@@ -1,0 +1,160 @@
+/*  header start styling */
+.header{
+    overflow: hidden;
+    position: relative;
+    height:60vh;
+    width: 100%;
+}
+/* nav bar styling */
+.navBar{
+    background-color: #111111;
+    position: fixed;
+    top: 0;
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    z-index: 1;
+    color: inherit;
+}
+.navBar__logo{
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+.menu-btn{
+    font-size: 1.6rem;
+    font-weight: 600;
+    transition: color 0.2s;
+    cursor: pointer;
+    color: inherit;
+}
+
+.menu-btn .icon{
+    margin-right: 3px;
+}
+.navBar__aside-menu{
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    right: -100vw;
+    flex-direction: column;
+    width: 20%;
+    height: 100vh;
+    background-color: inherit;
+    padding: 15px 30px;
+    bottom: 0;
+    overflow: hidden;
+}
+.open{
+    animation-name: moveRight;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.close{
+    animation-name: moveleft;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes moveRight{
+    0%{right: -100vw;}
+    100%{right: 0;}
+}
+@keyframes moveleft{
+    0%{right: 0;}
+    100%{right: -100vw;}
+    
+}
+.close-icon{
+    text-align: right;
+    font-size: 2rem;
+    width: 100%;
+    transition: color 0.2s;
+    cursor: pointer;
+}
+.links-container{
+    margin-top: 1rem;
+    font-weight: 500;
+}
+.menu-link{
+    display: block;
+    color: inherit;
+    font-size: 1.7rem;
+   padding: 1rem 0;
+   transition: color 0.2s;
+}
+.menu-btn:hover ,.close-icon:hover , .menu-link:hover{
+    color: #fff;
+}
+.menu-link:not(:last-child){
+    border-bottom: 1px solid  #5e5e5e;
+}
+/* nab bar end */
+
+/* banner styling */
+
+.header__banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 93vh;
+    width: 100%;
+}
+.header__banner video{
+    width: 100%;
+}
+.banner__layer{
+    background: linear-gradient(135deg, #a71d26 40%, #111111 60%);
+    opacity: 1;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    animation-name: bannerfadeIn;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes bannerfadeIn{
+    0%{opacity: 1;}
+    100%{opacity: 0.6;}
+}
+.banner__text{
+    width: 46%;
+    position: absolute;
+    text-align: center;
+    font-weight: 400;
+    opacity: 0;
+    top: 30%;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeIn{
+    0%{opacity: 0;}
+    100%{opacity: 1;transform: scale(1.1);}
+}
+.banner__text .main-heading{
+    color: #fff;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+   
+}
+.banner__text p{
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+/* end banner styling*/
+
+/* header end styling */

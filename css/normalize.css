@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body{
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    color: #5e5e5e;
+    font-weight: 400;
+    line-height: 1.65; 
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul ,dl {
+    list-style: none;
+}
