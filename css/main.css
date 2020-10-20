@@ -47,7 +47,9 @@ main{
     background: url('../images/bg.jpg') ;
     background-attachment: fixed;
  }
- 
+.section__services .section-layer{
+     background-color: #ffffffd7;
+ }
  .section-layer .row{
   flex-direction: column;
  }
