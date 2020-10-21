@@ -86,7 +86,7 @@ main{
 .section__about-us{
     width: 100%;
     background-image:  url('../images/cta01.jpg');
-     background-attachment: fixed;
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     min-height: 50vh;
@@ -100,6 +100,7 @@ main{
 }
 
 .section__about-us .secondry-heading{
+    width: 100%;
     text-align: center;
     color: #e7e5e5;
     font-size: 3.5rem;
