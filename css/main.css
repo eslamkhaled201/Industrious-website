@@ -85,7 +85,10 @@ main{
 /*  section about us   */
 .section__about-us{
     width: 100%;
-    background-image:  url('../images/cta01.jpg');
+    background:
+     linear-gradient(rgba(206, 27, 40, 0.25),
+      rgba(206, 27, 40, 0.25)),
+       url('../images/cta01.jpg');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -93,7 +96,7 @@ main{
     color: #e7e5e5;
 }
 .section__about-us .section-layer{
-    background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25));
+    height: 100%;
 }
 .section__about-us .row{
     flex-direction: column;
@@ -124,6 +127,9 @@ main{
 
 @media (max-width:767px)
 {
+    .container{
+        width: 80%;
+    }
     html{
         font-size: 8px;
     }
