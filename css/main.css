@@ -1,14 +1,16 @@
 @import './normalize.css';
 @import './header.css';
-.container{
+.container {
     width: 70%;
     margin: auto;
 }
-.row{
+
+.row {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 h2, h3, h4, h5, h6 {
     color: #555555;
     line-height: 1.5;
@@ -16,19 +18,21 @@ h2, h3, h4, h5, h6 {
     margin-bottom: 1.5rem;
     font-size: 1.6rem;
 }
-.secondry-heading{
+
+.secondry-heading {
     font-size: 4rem;
     line-height: 1.3;
     font-weight: 300;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.8rem;
 }
-.secondry-paragraph{
+
+.secondry-paragraph {
     text-align: center;
-    max-width: 75%;
-    margin-bottom:  2.5rem;
+    margin: 2.5rem 0;
     font-size: 1.6rem;
 }
-.section-layer{
+
+.section-layer {
     display: grid;
     place-items: center;
     padding: 10rem 0;
@@ -36,125 +40,219 @@ h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100%;
 }
+
+.dynamic-grid {
+    display: grid;
+    column-gap: 6rem;
+    width: 100%;
+    row-gap: 4rem;
+    margin-top: 3rem;
+}
+
 /* main section styling */
 
-main{
+main {
     width: 100%;
 }
- /* services section styling */
- .section__services{
+
+/* services section styling */
+
+.section__services {
     width: 100%;
-    background: url('../images/bg.jpg') ;
+    background: url('../images/bg.jpg');
     background-attachment: fixed;
- }
-.section__services .section-layer{
-     background-color: #ffffffd7;
- }
- .section-layer .row{
-  flex-direction: column;
- }
- .services__container{
-     display: grid;
-     grid-template-columns: repeat(auto-fill , minmax(25rem , 1fr));
-     column-gap: 6rem;
-     width: 100%;
-     row-gap: 4rem;
-     margin-top: 3rem;
- }
- .services__container .service{
-     display: flex;
-     flex-direction: column;
+}
+
+.section__services .section-layer {
+    background-color: #ffffffd7;
+}
+
+.section-layer .row {
+    flex-direction: column;
+}
+
+.services_grid {
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+}
+
+.services__container .service {
+    display: flex;
+    flex-direction: column;
     background-color: #ffffff;
     border-radius: 5px;
     padding: 0 32px;
     min-height: 37rem;
     justify-content: center;
- }
- .service-icon{
+}
+
+.service-icon {
     color: #ce1b28;
     font-size: 7rem;
     margin-bottom: 1.9rem;
- }
- .service p{
-     margin-bottom: 2rem;
-     font-size: 1.5rem;
- }
+}
 
- /* end section services */
+.service p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+/* end section services */
 
 /*  section about us   */
-.section__about-us{
+
+.section__about-us {
+    display: grid;
+    place-items: center;
     width: 100%;
-    background:
-     linear-gradient(rgba(206, 27, 40, 0.25),
-      rgba(206, 27, 40, 0.25)),
-       url('../images/cta01.jpg');
+    background: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url('../images/cta01.jpg');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     min-height: 50vh;
     color: #e7e5e5;
+    padding: 2rem 0;
+    text-align: center;
 }
-.section__about-us .section-layer{
-    height: 100%;
-}
-.section__about-us .row{
+
+.section__about-us .row {
     flex-direction: column;
 }
 
-.section__about-us .secondry-heading{
+.section__about-us .secondry-heading {
+    margin-top: 10px;
     width: 100%;
     text-align: center;
     color: #e7e5e5;
     font-size: 3.5rem;
 }
-.section__about-us .secondry-paragraph{
+
+.section__about-us .secondry-paragraph {
     max-width: 100%;
     font-size: 1.5rem;
 }
+
 /* end section about us */
+
+/* start section__clients-feedback styling */
+
+.section__our-team{
+    width: 100%;
+    background: url('../images/bg.jpg');
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.section__our-team .section-layer {
+    background-color: #ffffffd7;
+}
+
+.section__our-team .team-grid{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.member{
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 4rem 32px;
+    justify-content: center;
+}
+.qoute{
+    width: 90%;
+    text-align: start;
+     font-size: 1.4rem;  
+     padding: 3rem 0 3rem 2rem;
+     margin-bottom: 3rem;
+     font-style: italic;
+     line-height: 1.8;
+     border-left:5px solid rgba(0, 0, 0, 0.25);
+}
+.member-info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.member-photo{
+    border-radius: 50%;
+    width: 20%;
+    margin-right: 3rem;
+}
+.member-info p{
+    font-size: 1.4rem;
+}
+.member-info p span{
+    color: #ce1b28;
+}
+/* End section__clients-feedback styling */
 
 /*  end main section */
 
-
 /* resposive settings */
-@media (max-width:992px)
-{
-    .navBar__aside-menu{
+
+@media (max-width:992px) {
+    .container{
+        width: 90%;
+    }
+    .navBar__aside-menu {
         width: 30vw;
     }
+    .member{
+        width: 47%;
+        margin-bottom: 2rem;
+    }
+    /*.team-grid {
+        display: flex;
+        justify-content: space-around;
+    column-gap: 0;
+    row-gap: 0;
+            flex-wrap: wrap;
+    }
+    .member{
+        width: 46%;
+        margin-bottom: 2rem;
+    } */
+    
 }
 
-@media (max-width:767px)
-{
-    .container{
-        width: 80%;
-    }
-    html{
+@media (max-width:767px) {
+ 
+    html {
         font-size: 8px;
     }
-    .header{
+    .header {
         background-image: url('../images/banner.jpg');
         background-size: cover;
         background-position: center;
         height: 45vh;
     }
-    .navBar__aside-menu{
+    .navBar__aside-menu {
         width: 50%;
     }
-    video{
-       display: none;
+    video {
+        display: none;
     }
-
-    .header__banner{
+    .header__banner {
         height: 100%;
     }
-    .banner__text{
+    .banner__text {
         top: 15vh;
         width: 70%;
     }
-    .banner__text .main-heading{
+    .banner__text .main-heading {
         margin: 0;
         font-size: 2.5rem;
+    }
+    .section__about-us .secondry-heading {
+        font-size: 3rem;
+    }
+    .section__about-us .secondry-paragraph {
+        font-size: 2rem;
+    }
+    .member{
+        width: 80%;
+        margin-bottom: 3rem;
     }
 }
