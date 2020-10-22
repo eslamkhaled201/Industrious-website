@@ -75,7 +75,7 @@ main {
     grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
 }
 
-.services__container .service {
+.services_grid .service {
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
