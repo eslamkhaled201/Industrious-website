@@ -23,6 +23,7 @@
 .navBar__logo{
     font-weight: 600;
     font-size: 1.6rem;
+    color: #fff;
 }
 .menu-btn{
     font-size: 1.6rem;
@@ -45,7 +46,6 @@
     height: 100vh;
     background-color: inherit;
     padding: 15px 30px;
-    bottom: 0;
     overflow: hidden;
 }
 .open{
