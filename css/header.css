@@ -47,6 +47,7 @@
     background-color: inherit;
     padding: 15px 30px;
     overflow: hidden;
+    bottom: 0;
 }
 .open{
     animation-name: moveRight;
