@@ -68,7 +68,6 @@
 @keyframes moveleft{
     0%{right: 0;}
     100%{right: -100vw;}
-    
 }
 .close-icon{
     text-align: right;
